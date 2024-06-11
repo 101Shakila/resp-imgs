@@ -1,0 +1,33 @@
+.grid-container 
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    padding: 1em;
+}
+
+ .grid-item 
+ {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.grid-item img 
+{
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 800px) 
+{
+    .grid-container 
+    {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
